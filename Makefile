@@ -8,4 +8,7 @@ run:
 	docker rm node-app --force && docker run -it --network node-app-bridge --name node-app -p 3001:3001 $(NAME):$(TAG)
 
 up:
-	docker rm node-app --force && docker-compose up
+	docker rm node-app --force && docker-compose up -d
+
+down:
+	docker-compose down
