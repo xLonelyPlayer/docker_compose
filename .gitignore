@@ -1,8 +1,10 @@
-LICENSE
+*.log
 
-node_modules
+.vscode/
 
-client/node_modules
-client/build
+node_modules/
 
-server/public
+client/node_modules/
+client/build/
+
+server/public/
