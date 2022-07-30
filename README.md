@@ -1,7 +1,12 @@
 # docker_compose
 Docker compose playground
 
-## To test
+## To start
 ```
 make up
+```
+
+## To stop
+```
+make down
 ```
