@@ -1,6 +1,6 @@
 
-# docker_compose
-Docker compose playground.
+# node_app
+Node application to run as a container
 
 ## Requirements
 This project was built using re following version:
