@@ -5,6 +5,7 @@ COPY ./package.json .
 RUN npm install
 
 WORKDIR /app/server/
+COPY ./server/lib ./lib
 COPY ./server/index.js .
 
 WORKDIR /app/client/

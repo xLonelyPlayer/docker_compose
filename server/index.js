@@ -3,8 +3,11 @@ const app = express()
 const path = require("path")
 const port = 3001
 
-app.get('/api/', (req, res) => {
-  res.json({ message: 'Hello World!'});
+const { asyncFunction } = require('./lib/mariadb');
+
+app.get('/api/', async (req, res) => {
+  const rows = await asyncFunction();
+  res.json({ message: 'Hello World!', rows });
 })
 
 app.use(express.static(path.resolve(__dirname, "./public/")));

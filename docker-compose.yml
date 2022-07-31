@@ -7,6 +7,8 @@ services:
       - node-app-compose-bridge
     ports:
       - 3001:3001
+    depends_on:
+      - mariadb
   mariadb:
     image: xlonelyplayer/mariadb:1.0
     container_name: mariadb
